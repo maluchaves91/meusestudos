@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <!-- https://cssgenerator.org/box-shadow-css-generator.html-->
+    <style>
+        table {
+            border: dashed 1px black;
+            box-shadow: 19px 20px 37px 0px rgba(0, 0, 0, 0.62);
+            -webkit-box-shadow: 19px 20px 37px 0px rgba(0, 0, 0, 0.62);
+            -moz-box-shadow: 19px 20px 37px 0px rgba(0, 0, 0, 0.62);
+
+        }
+
+        table thead th {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        table tfoot td {
+            background-color: gray;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: rgb(127, 187, 255);
+        }
+
+        table tbody tr:hover {
+            background-color: rgb(89, 249, 196);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+    <p></p>
+    <table sumary="Esta tabela se refere a nomes e idades" width="250" align="center" cellspacing="1" cellpadding="25">
+        <thead>
+            <tr>
+                <!--Para mesclar coluna usa-se rowspan-->
+                <th colspan="2">Minha primeira tabela</th>
+            </tr>
+            <tr id="1">
+                <th title="Nome">Nome</th>
+                <th title="Idade">Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="2">
+                <td>Malu</td>
+                <td>31</td>
+            </tr>
+            <tr id="3">
+                <td>Sophia</td>
+                <td>13</td>
+            </tr>
+            <tr id="4">
+                <td>Be</td>
+                <td>11 m</td>
+            </tr>
+            <tr id="5">
+                <td>Bai</td>
+                <td>2</td>
+            </tr>
+            <tr id="6">
+                <td>Kiki</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Total</td>
+            <td>6</td>
+        </tfoot>
+    </table>
+</body>
+
+</html>

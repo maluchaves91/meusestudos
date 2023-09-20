@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark e Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br>
+    <a class="btn5" type="button" href="index.html">Voltar</a>
+    <br><br><br><br>
+    <h2 style="text-align: center;">Mark e Javascript</h2>
+    <input type="text" name="" id="busca">
+    <br><br>
+    <h2>Grilo</h2>
+    <br>
+    <p id="descricao">Grilo (do latim grillus) são insetos relacionados aos gafanhotos, e mais intimamente relacionados
+        com gafanhotos verdes e grilos do mato (família Tettigoniidae) e wetas (famílias Anostostomatidae e
+        Rhaphidophoridae). Eles têm seu corpo um pouco achatado e longas antenas. Existem cerca de 900 espécies de
+        grilos. Eles tendem a ser noturnos e são frequentemente confundidos com gafanhotos porque possuem uma
+        estrutura corporal semelhante incluindo saltar as patas traseiras. Grilos são inofensivos aos seres humanos</p>
+
+    <script>
+        var searchField = document.getElementById("busca");
+        var descriptionObject = document.getElementById("descricao");
+        var textToSearch = descriptionObject.innerHTML;
+
+        function realizaBusca(busca) {
+            const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark>)+`, 'ig');
+            const ocurrences = textToSearch.match(regex);
+            descriptionObject.innerHTML = textToSearch.replace(regex, `<mark>${busca}</mark>`)
+        }
+
+        searchField.addEventListener('keyup', (e) => realizaBusca(e.target.value));
+    </script>
+</body>
+
+</html>

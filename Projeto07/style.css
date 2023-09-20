@@ -1,0 +1,92 @@
+.btn1{
+    padding: 10px;
+    border-style: ridge;
+    border-radius: 50px;
+    border-color: black;
+    text-decoration: none;
+    background-color: red;
+    color:black;
+}
+
+.btn2{
+    padding: 10px;
+    border-style: ridge;
+    border-radius: 50px;
+    border-color: black;
+    text-decoration: none;
+    background-color: orange;
+    color:black;
+}
+
+.btn3{
+    padding: 10px;
+    border-style: ridge;
+    border-radius: 50px;
+    border-color: black;
+    text-decoration: none;
+    background-color: yellow;
+    color:black;
+}
+
+.btn4{
+    padding: 10px;
+    border-style: ridge;
+    border-radius: 50px;
+    border-color: black;
+    text-decoration: none;
+    background-color: rgb(52, 255, 52);
+    color:black;
+}
+
+.btn5{
+    padding: 10px;
+    border-style: ridge;
+    border-radius: 50px;
+    border-color: black;
+    text-decoration: none;
+    background-color: lightskyblue;
+    color:black;
+}
+
+.btn6{
+    padding: 10px;
+    border-style: ridge;
+    border-radius: 50px;
+    border-color: black;
+    text-decoration: none;
+    background-color: rgb(65, 65, 253);
+    color:black;
+}
+
+.btn7{
+    padding: 10px;
+    border-style: ridge;
+    border-radius: 50px;
+    border-color: black;
+    text-decoration: none;
+    background-color: rgb(201, 66, 201);
+    color:black;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+
+code{
+    background-color: #f1f1f1;
+    color:red;
+}
